@@ -83,14 +83,14 @@ src/
 
 📱 Mobile responsive layout
 
-🙌 Author
-Vasu Agrawal
+### 🙌 Author
+#### Vasu Agrawal
 🎓 Student @ NMIMS Shirpur
 🏀 National-Level Basketball Player
 📧 vasuagrawal1040@gmail.com
 📸 @vxsu.uwu
 
-📝 License
+### 📝 License
 This project is open source and free to use under the MIT License.
 
 yaml
