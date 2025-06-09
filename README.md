@@ -39,20 +39,22 @@ A modern expense tracking app built with **React + Vite**, using Context API for
 ```bash
 git clone https://github.com/your-username/expense-tracker.git
 cd expense-tracker
-2. Install Dependencies
-bash
+```
+### 2. Install Dependencies
+```bash
 Copy
 Edit
 npm install
-3. Run the App
-bash
+```
+### 3. Run the App
+```bash
 Copy
 Edit
 npm run dev
 App will be available at: http://localhost:5173
-
-📁 Project Structure
-plaintext
+```
+### 📁 Project Structure
+```plaintext
 Copy
 Edit
 src/
@@ -69,7 +71,8 @@ src/
 ├── App.jsx
 ├── App.css
 └── main.jsx
-🎯 Planned Features
+```
+### 🎯 Planned Features
 📝 Persistent localStorage sync
 
 📈 Budget limits & warnings per group
@@ -85,7 +88,7 @@ Vasu Agrawal
 🎓 Student @ NMIMS Shirpur
 🏀 National-Level Basketball Player
 📧 vasuagrawal1040@gmail.com
-📸 @krishnam_ideas
+📸 @vxsu.uwu
 
 📝 License
 This project is open source and free to use under the MIT License.
