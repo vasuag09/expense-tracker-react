@@ -1,0 +1,326 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0e1a1a;
+  color: #e0f7f7;
+  line-height: 1.6;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+:root {
+  --bg-dark: #0a0f0d;
+  --bg-sidebar: #101817;
+  --bg-content: #111e1c;
+  --primary: #2bc0a3;
+  --text: #e1f1ef;
+  --muted: #9dbab5;
+  --border: #1c2b29;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #102222;
+  border-bottom: 1px solid #1f3f3f;
+}
+
+header img {
+  width: 96px;
+  height: auto;
+}
+
+header p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+/* sidebar.css */
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #0b1f1f; /* dark background matching your theme */
+  padding: 1.5rem;
+  color: #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.6rem;
+  color: #30d5c8; /* Matches the teal from the logo */
+  margin-bottom: 1rem;
+}
+
+.sidebar-button {
+  background-color: #30d5c8;
+  color: #000;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #26b8ad;
+}
+
+.sidebar p {
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.sidebar li button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #30d5c8;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.sidebar li button:hover {
+  background-color: #30d5c8;
+  color: #000;
+}
+
+#selected{
+  background-color: #30d5c8;
+  color: #000;
+}
+
+.new-group-input-container {
+  /* Removed top margin here, as the .sidebar button's margin-bottom might suffice or need adjustment */
+  margin-bottom: 1rem; /* Space below the input field and its button */
+  padding: 0; /* No extra padding inside this container */
+  box-sizing: border-box;
+}
+
+/* Styling for the new group name input field */
+.new-group-name-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem; /* Adjusted padding to match button height more closely */
+  border: 1px solid #30d5c8; /* Use your main teal color for consistency */
+  border-radius: 5px;
+  background-color: #0f2c2c; /* Slightly lighter than sidebar, but still dark */
+  color: #e0e0e0;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 0.5rem; /* Space between input and the "Add" button */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.new-group-name-input::placeholder {
+  color: #888;
+}
+
+.new-group-name-input:focus {
+  border-color: #4cd9e0; /* A brighter teal on focus */
+  background-color: #1a3a3a; /* Slightly lighter on focus */
+}
+
+.main-content {
+  flex-grow: 1; /* Fills remaining vertical space within content-wrapper */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: flex-start; /* Aligns items to the top */
+  background-color: #112828; /* Consistent background for the main area */
+}
+
+.group-name-heading {
+  font-size: 2.8rem;
+  color: #30d5c8;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+
+.group-details-section {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 1rem; /* Adjusted space from heading */
+  text-align: center;
+  /* Other specific styles for the details section content */
+}
+
+.group-details-section p {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
+
+.form-container {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+.form-container h3 {
+  margin: 0 0 20px;
+  color: #d3e1e4;
+}
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.form-group label {
+  width: 100px;
+  color: #d3e1e4;
+}
+.form-group input {
+  flex: 1;
+  padding: 8px;
+  background-color: #264653;
+  border: 1px solid #d3e1e4;
+  color: #d3e1e4;
+  font-size: 16px;
+}
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.form-buttons button {
+  padding: 10px 20px;
+  background-color: #2a9d8f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-buttons button:hover {
+  background-color: #21867a;
+}
+.form-buttons button:last-child {
+  background-color: #264653;
+}
+.form-buttons button:last-child:hover {
+  background-color: #1f3b47;
+}
+.main-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.main-content li {
+  background-color: #0e1c1f;
+  color: #dff;
+  border: 1px solid #19c6c6;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.main-content li:hover {
+  background-color: #143436;
+  border-color: #26e0e0;
+}
+
+.expense-name {
+  font-weight: 600;
+  color: #2ee5e5;
+}
+
+.expense-details {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+.expense-delete-button button {
+  background-color: #e74c3c; /* red for delete */
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expense-delete-button button:hover {
+  background-color: #c0392b;
+}
+
+.group-item-row{
+  display: flex;
+  flex-direction: row;
+}
+
+#group-delete-button {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.3rem;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+#group-delete-button:hover {
+  color: #e74c3c;
+}
+
+.total-sum{
+  color: #4cd9e0;
+  font-size: 1rem;
+}
+.search-input {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid #30d5c8;
+  background-color: #0e1c1f;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.clear-search {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  margin-left: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.clear-search:hover {
+  color: #f55;
+}
+
+
